@@ -9,15 +9,23 @@ import { Pokemon } from './pokemon';
 })
 export class AppComponent implements OnInit {
 
+  
+  values="";
+  utilisateur: any;
   pokemons: Pokemon[] = null;
   title = '';
 
   ngOnInit(): void {
     this.pokemons = POKEMONS;
+    this.utilisateur = "54";
   }
 
-  onKey(event: any) {
-    this.title = event.target.value;
+  onKey(value: string) {
+    this.values = value;
+  }
+
+  selectPokemon(pokemon: Pokemon){
+    console.log(pokemon.name);
   }
 
 }
