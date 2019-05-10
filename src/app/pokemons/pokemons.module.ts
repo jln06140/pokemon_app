@@ -6,6 +6,7 @@ import { BorderCardDirective } from './border-card.directive';
 import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
 import { PokemonsRoutingModule } from './pokemons-routing.module';
 import { TriPkmn } from './Test-tri-pipe';
+import { PokemonsService } from './pokemons.service';
 
 @NgModule({
 
@@ -20,7 +21,7 @@ import { TriPkmn } from './Test-tri-pipe';
         PokemonTypeColorPipe,
         TriPkmn
     ],
-    providers: []
+    providers: [PokemonsService]
 
 })
 
