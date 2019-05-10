@@ -3,7 +3,7 @@
 </h1>
 <div class="container">
   <div class="row">
-    <div *ngFor="let pokemon of pokemons | tri:1" class="col s6 m4">
+    <div *ngFor="let pokemon of pokemons " class="col s6 m4">
       <div [pkmnBorderCard]="blue" class="card horizontal" (onclick)="selectPokemon(pokemon)">
         <div class="card-image">
           <img [src]=pokemon.picture />
@@ -20,5 +20,3 @@
     </div>
   </div>
 </div>
-
-<router-outlet></router-outlet>
