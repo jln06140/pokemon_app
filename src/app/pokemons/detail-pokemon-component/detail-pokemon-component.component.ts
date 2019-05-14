@@ -25,4 +25,9 @@ goBack(): void {
   this.router.navigate(['pokemons']);
 }
 
+goEdit(pokemon : Pokemon){
+  let link = ['/pokemon/edit', pokemon.id];
+  this.router.navigate(link);
+}
+
 }

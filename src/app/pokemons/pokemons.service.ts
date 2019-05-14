@@ -17,7 +17,7 @@ export class PokemonsService {
     return this.getPokemons().find(p => p.id == id);
   }
 
-  getPokemonTypes(): Array<String> {
+  getPokemonTypes(): Array<string> {
     return [
       'Plante', 'Feu', 'Eau', 'Insecte', 'Normal', 'Electrik',
       'Poison', 'Fée', 'Vol', 'Combat', 'Psy'
